@@ -31,4 +31,6 @@ Descripción de los integrantes del grupo:
     Bautista Iorfida: Soy un estudiante de 17 años, me gusta la música, el deporte y pienso seguir la carrera de Licenciatura en sistemas de información de las organizaciones en la UBA. 
 
     Juan Pablo Tuso: Soy un contador público de 30 años, me gusta ver peliculas/series, jugar a videojuegos en line y estoy ampliando mis conocimientos al considerarme una persona bursatil.
+
+    Matias Dopazo: Soy un estudiante de 17 años, me interesa mucho la porgramacion, me encanta el gimnasio y pienso estudiar ingenieria en sistemas.
     
