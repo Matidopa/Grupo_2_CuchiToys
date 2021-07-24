@@ -57,3 +57,6 @@ Sitios de referencia:
 
     En esta web nos pareció muy ordenado y aplicable para nuestra página la estructura del Footer, con cada categoría separada por columnas y los logos de los métodos de pago y Formas de envío. Además, las redes sociales con sus logos en una columna separada y los símbolos en las formas de contacto nos pareció una forma sencilla para el usuario de reconocer cada espacio. 
 
+
+Task Manager
+    https://trello.com/b/YHy9UirE/grupo2cuchitoys

@@ -1,0 +1,22 @@
+{
+  "name": "grupo_2_cuchitoys",
+  "version": "1.0.0",
+  "description": "Descripción del proyecto:",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iorfi/Grupo_2_CuchiToys.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iorfi/Grupo_2_CuchiToys/issues"
+  },
+  "homepage": "https://github.com/Iorfi/Grupo_2_CuchiToys#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
