@@ -1,13 +1,16 @@
 const express = require ('express');
 const app = express();
+const path = require("path");
 const port= 3030;
+
+const publicPath = path.resolve(__dirname, "./public");
+
+app.use(express.static(publicPath));
+
 app.listen(port,()=>{
     console.log(`Example app listening at http://localhost:${port}`)
 });
-const path= require ('path');
-
-app.use(express.static(path.resolve('public')))
 
 app.get('/',(req,res)=>{
-    res.sendFile (path.join(__dirname,'views/index.html'))
+    res.sendFile (path.join(__dirname,'views/home.html'))
 });
