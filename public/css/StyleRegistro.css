@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}/* pregutnar*/
+div{
+    border-radius: 5px;
+}
+.contenedor{
+    background-color:#CCC;
+    width:100%;
+    height: 125px;
+}
+.contenidoA{
+    width:15%;
+    float:left;
+    margin: 1%;
+    margin-left: 5%;
+}
+.contenidoB{
+    width:44%;
+    float:left;
+    margin: 2.5%;
+    border-radius: 8px;
+    height: 50px;
+    background-color: green;
+}
+.contenidoC{
+    width:10%;
+    float:right;
+    margin: 2.5%;
+    margin-left: 2%;
+}
+.contenidoD{
+    width:10%;
+    float:right;
+    margin: 2.5%;
+    margin-left: 2%;
+}
+
+body {
+    background-color: white;
+    font-family: Roboto Regular;
+}
+
+h1{
+    color: #CB997E;
+    text-align: center;
+}
+.registroCompleto{
+   width: 45%;
+   margin:auto;
+   display: flex;
+   flex-direction:column ;
+   justify-content: space-around;
+   color:#CB997E;
+   
+}
+.registroNombre, .registroEmail, .registroTelefono, .registroContraseña, .registroContraseñax2{
+    padding: 10px;
+}
+
+.nombre, .telefono, .email, .contraseña, .contraseñax2{
+    margin-bottom: 2.5%;
+    margin-left: 7px;
+    font-size: 17px;
+    font-weight: bold;
+}
+#AlmacenarNombre, #AlmacenarEmail, #AlmacenarTelefono{
+    color: #DDBEA9;
+
+}
+.yaTenesCuenta a{
+    color:#CB997E;
+}
+.yaTenesCuenta{
+    text-align: center;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+.botonCuenta{
+    margin-top: 15px;
+    float: center;
+    border-radius: 12px;
+    background-color: #CB997E;
+    font-size: 20px;
+    text-align: center;
+    width: 98%;
+    border-color: #CB997E;
+    padding:5px;
+    color: white;
+}
+#AlmacenarNombre, #AlmacenarEmail, #AlmacenarTelefono, #AlmacenarContraseña, #AlmacenarContraseñax2{
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #CB997E;
+    padding: 7px;
+}
+input::placeholder{
+color:#CB997E;
+}/*revisar */
