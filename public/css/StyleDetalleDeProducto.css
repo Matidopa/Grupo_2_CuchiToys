@@ -40,3 +40,13 @@ body {
     background-color: white;
     font-family: Roboto Regular;
 }
+.categoria a {
+    color: #DDBEA9;
+}
+.categoria{
+    margin-top:3em;
+    margin-left: 5em;
+}
+.imagencarrucel{
+    margin-left: 10em    
+}
