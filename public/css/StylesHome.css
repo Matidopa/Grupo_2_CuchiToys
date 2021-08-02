@@ -1,0 +1,168 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.banner {
+    background-color:rgb(255, 241, 230);
+}
+.banner h2 {
+    font-size: 13px;
+    text-align: center;
+}
+
+.contenedorHeader{
+    background-color: rgb(221, 190, 169);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+
+.contHeaderA, .contHeaderB, .contHeaderC, .contHeaderD {
+    flex-grow: 1;
+    flex-wrap: nowrap;
+}
+
+.contHeaderA{
+    width:12%;
+    padding: 2%;
+}
+.contHeaderA img {
+    height: 50px;
+    width: 50px;
+}
+
+.barrabusqueda {
+    display: flex;
+}
+
+.inputBusqueda {
+    width: 90%;
+    order:1
+}
+.logoBusqueda {
+    order: 2;
+    width: 10%;
+}
+
+.contHeaderB {
+    width: 45%;
+    align-items: center;
+    }
+
+.contHeaderC {
+width: 10%;
+padding-left: 5%;
+}
+.contHeaderC img {
+    height: 25px;
+    width: 25px;
+}
+
+.contHeaderC p {
+    display: none;
+}
+
+.contHeaderD {
+width: 10%;
+padding-left: 5%;
+    }
+
+.contHeaderD img {
+    height: 25px;
+    width: 25px;
+}
+
+.contHeaderD p {
+    display: none;
+}
+
+body {
+    background-color: gray;
+}
+
+.contenedorFooter {
+    background-color: rgb(221, 190, 169);
+    width: 100%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contFooterA {
+    width: 15%;
+}
+.contFooterA img {
+    height: 50px;
+    width: 50px;
+}
+.contFooterB h2, .contFooterC h2 {
+    font-size: 14px;
+    font-family: unset;
+ }
+
+ .contFooterB {
+     display: flex;
+     flex-direction: column;
+     width: 30%;
+ }
+ .contFooterC {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left:2%;
+}
+
+.contFooterD {
+    width: 20%;
+    padding-left:2%;
+}
+@media (min-width: 576px) {
+
+.contenedor{
+    background-color:#CCC;
+}
+
+.contHeaderA{
+    width: 5%;
+}
+
+.contHeaderB{
+    background-color: green;
+    width: 60%;
+}
+
+.contHeaderC{
+    width: 1%;
+    padding-left: 5%;
+}
+
+.contHeaderD{
+    width: 1%;
+    padding-left: 2%;
+
+}
+
+body {
+    background-color: green;
+}
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 992px) {
+    
+}
+
+
+@media (min-width: 1200px) {
+    
+}
