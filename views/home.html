@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> </title>
-    <link rel="stylesheet" href="/css/Styles.css">
+    <link rel="stylesheet" href="/css/StylesHome.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 rel="stylesheet" />
 </head>
 <body>
     <header>
 
-        <div class="contenedor">
+        <div class="banner">
+            <h2>Envios a todo el País - Envíos en Caba en el día - 10 % OFF en Efectivo </h2>
+        </div>
+        <div class="contenedorHeader">
     
-            <div class="contenidoA"> <img src="/images/CT Logo.png" width= "105px"> </div>
+            <div class="contHeaderA"> <img src="/images/CT Logo.png" width= "105px"> </div>
 
-            <div class="contenidoB"> <form action="/my-handling-form-page" method="post">
-                <div class="contenidoBA">
-                    <button type="submit" style="float: right;" > <i class="fas fa-search"></i> </button>
+            <div class="contHeaderB"> 
+                
+                <form action="/my-handling-form-page" method="post">
+
+                <div class="barraBusqueda">
+                    <button type="submit" style="float: right;" class = "logoBusqueda" > <i class="fas fa-search"  ></i> </button>
                     <label for="buscado"></label>
-                    <input type="text" id="buscado" name="textoBuscado" size = 75% value = "¿Qué estás buscando?" >
+                    <input class = "inputBusqueda" type="textarea" id="buscado" name="textoBuscado" size = 65% placeholder = "¿Qué estás buscando?" >
                 </div>
-            </form> </div>
 
-            <div class="contenidoC"> <a href = ""> <i class="fas fa-cart-plus" ></i>   </a> </div>
+                 </form> </div>
+
+            <div class="contHeaderC"> <a href > <img  src="/images/mi-Carrito.png" width= "40px" ></a> </div>
         
-            <div class="contenidoD"> <a href = ""> <i class="fas fa-user-circle" ></i> </a> </div>
+            <div class="contHeaderD"> <a href > <img  src="/images/Perfil.png" width= "40px" ></a>  </div>
 
         </div>
 
@@ -33,5 +40,31 @@ rel="stylesheet" />
     <main>
     </main>
     <footer>
+        <div class="contenedorFooter">
+
+            <div class="contFooterA"> <img src="/images/CT Logo.png" width= "105px"> </div>
+
+            <div class="contFooterB"> 
+
+                <h2> Contacto</h2> 
+                <p>Ejemplo@gmail.com</p>
+                <p>+54 911 27284692</p>
+                <p>direccion del lugar</p>
+            </div>
+
+            <div class="contFooterC"> 
+
+                <h2> Categorías</h2> 
+                <a href=""> cate 1</a>
+                <a href=""> cate 2</a>
+                <a href=""> cate 3</a>
+            </div>
+
+            <div class="contFooterC"> <img src="/images/CT Logo.png" width= "105px"> </div>
+
+            <div class="contFooterD"> <img src="/images/CT Logo.png" width= "105px"> </div>
+
+        </div>
+    </footer>
 </body>
 </html> 
