@@ -98,3 +98,14 @@
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 } 
+
+.nav-body {
+width:80%; background-color: #F0EFEB;border-color: #CB997E;border-radius: 10px;
+margin:auto;}
+
+.nav-body-flex {
+  display: flex;justify-content: center;text-align:center,end;
+  }
+.nav-link{
+  font-family: 'Roboto', sans-serif;margin: 2px 10px;font-weight:bold;
+}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/StylesHome.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
 <!--CSS BodyHome-->
 <link rel="stylesheet"href="/css/Styles-Body-Home.css">
@@ -75,19 +76,8 @@ rel="stylesheet" />
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-        <!-- Navbar central -->
-    
-                <div class="collapse navbar-collapse" id="mynav">  
-                   <li class="nav-item active" >    
-                    <a  class="nav-link">Home</a>     
-                    <a  class="nav-link">About Us</a>  
-                    <a  class="nav-link">Service</a>  
-                    <a  class="nav-link">Plans</a>  
-                    <a  class="nav-link">Connect us</a>  
-                    </li>  
-                </DIV> 
-               
-               <script>
+ 
+ <script>
                     var slideIndex = 1;
                     showSlides(slideIndex);
                     
@@ -114,8 +104,18 @@ rel="stylesheet" />
                       slides[slideIndex-1].style.display = "block";  
                       dots[slideIndex-1].className += " active";
                     }
-                    </script>
-    
+    </script>
+    <!-- Navbar central -->
+
+            <div class="nav-body" >  
+               <li class="nav-body-flex" >    
+                <a  class="nav-link">JUGUETES DESTACADOS</a>     
+                <a  class="nav-link">OFERTAS</a>  
+                <a  class="nav-link">ENVIOS</a>  
+                </li>  
+            </DIV> 
+           
+
      </main>
     <footer>
         <div class="contenedorFooter">
