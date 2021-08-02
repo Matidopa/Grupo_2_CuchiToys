@@ -12,7 +12,7 @@ app.listen(port,()=>{
 });
 
 app.get('/',(req,res)=>{
-    res.sendFile (path.join(__dirname,'views/home.html'))
+    res.sendFile (path.join(__dirname,'views/home-body.html'))
 });
 app.get('/registro',(req,res)=>{
     res.sendFile (path.join(__dirname,'views/registro.html'))
