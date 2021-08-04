@@ -11,67 +11,73 @@ rel="stylesheet" />
 <body>
     <header>
 
-        <div class="contenedor">
+        <div class="banner">
+            <h2>Envios a todo el País - Envíos en Caba en el día - 10 % OFF en Efectivo </h2>
+        </div>
+        <div class="contenedorHeader">
     
-            <div class="contenidoA"> <img src="/images/CT Logo.png" width= "105px"> </div>
+            <div class="contHeaderA"> <img src="/images/CT Logo.png" width= "105px"> </div>
 
-            <div class="contenidoB"> <form action="/my-handling-form-page" method="post">
-                <div class="contenidoBA">
-                    <button type="submit" style="float: right;" > <i class="fas fa-search"></i> </button>
+            <div class="contHeaderB"> 
+                
+                <form action="/my-handling-form-page" method="post">
+
+                <div class="barraBusqueda">
+                    <button type="submit" style="float: right;" class = "logoBusqueda" > <i class="fas fa-search"  ></i> </button>
                     <label for="buscado"></label>
-                    <input type="text" id="buscado" name="textoBuscado" size = 75% placeholder = "¿Qué estás buscando?" >
+                    <input class = "inputBusqueda" type="textarea" id="buscado" name="textoBuscado" size = 65% placeholder = "¿Qué estás buscando?" >
                 </div>
-            </form> </div>
 
-            <div class="contenidoC"> <a href = ""> <i class="fas fa-cart-plus" ></i>   </a> </div>
+                 </form> </div>
+
+            <div class="contHeaderC"> <a href > <img  src="/images/icono-carrito.png" width= "40px" ></a> </div>
         
-            <div class="contenidoD"> <a href = ""> <i class="fas fa-user-circle" ></i> </a> </div>
+            <div class="contHeaderD"> <a href > <img  src="/images/icono-perfil.png" width= "40px" ></a>  </div>
 
         </div>
 
-    </header>
     <main>
 
         <h1>Crear cuenta</h1>
 
     <div class="registroCompleto">
-
+        <form action="/login" method="GET">
         <div class="registroNombre">
             <div class="nombre">Nombre y apellido</div>
-            <label for="nombreyApellido"></label>
-            <input  type="text" id="AlmacenarNombre" name="AlmacenarNombre" size = 75% placeholder = "ej: María Perez" >
+            <label for="AlmacenarNombre"></label>
+            <input  type="text" id="AlmacenarNombre" name="AlmacenarNombre"  placeholder = "ej: María Perez" >
         </div>
 
         
         <div class="registroEmail">
             <div class="email">Email</div>
-            <label for="email"></label>
-            <input type="email" id="AlmacenarEmail" name="AlmacenarEmail" size = 75% placeholder = "ej: tunombre@email.com" >
+            <label for="AlmacenarEmail"></label>
+            <input type="email" id="AlmacenarEmail" name="AlmacenarEmail"  placeholder = "ej: tunombre@email.com" >
         </div>
 
         
         <div class="registroTelefono">
             <div class="telefono">Telefono</div>
-            <label for="telefono"></label>
-            <input type="tel" id="AlmacenarTelefono" name="AlmacenarTelefono" size = 75% placeholder = "ej: 1123445567" >
+            <label for="AlmacenarTelefono"></label>
+            <input type="tel" id="AlmacenarTelefono" name="AlmacenarTelefono"  placeholder = "ej: 1123445567" >
         </div>
         
         <div class="registroContraseña">
             <div class="contraseña">Contraseña</div>
-            <label for="contraseña"></label>
-            <input type="password" id="AlmacenarContraseña" name="AlmacenarContraseña" size = 75%  >
+            <label for="AlmacenarContraseña"></label>
+            <input type="password" id="AlmacenarContraseña" name="AlmacenarContraseña"   >
         </div>
         
         <div class="registroContraseñax2">
             <div class="contraseñax2">Repetir contraseña</div>
-            <label for="contraseñax2"></label>
-            <input type="password" id="AlmacenarContraseñax2" name="AlmacenarContraseñax2" size = 75% >
+            <label for="AlmacenarContraseñax2"></label>
+            <input type="password" id="AlmacenarContraseñax2" name="AlmacenarContraseñax2"  >
         </div>
 
-        <button class="botonCuenta" type="submit" > <div>Crear cuenta</div> </button>        
-
-        <div class="yaTenesCuenta">¿Ya tenés cuenta?<a href="">Iniciá sesión</a></div>
-
+        <button class="botonCuenta" type="submit" >Crear cuenta</button>        
+        </form>
+        <div class="yaTenesCuenta">¿Ya tenés cuenta?<a href="/login">Iniciá sesión</a></div>
+        
     </div>
     </main>
     <footer>

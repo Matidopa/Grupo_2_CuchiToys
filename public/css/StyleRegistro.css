@@ -1,41 +1,91 @@
-*{
-    box-sizing: border-box;
+* {
     padding: 0px;
     margin: 0px;
-}/* pregutnar*/
-div{
-    border-radius: 5px;
+    box-sizing: border-box;
 }
-.contenedor{
-    background-color:#CCC;
-    width:100%;
-    height: 125px;
+
+.banner {
+    background-color:rgb(255, 241, 230);
 }
-.contenidoA{
-    width:15%;
-    float:left;
-    margin: 1%;
-    margin-left: 5%;
+.banner h2 {
+    font-size: 13px;
+    text-align: center;
 }
-.contenidoB{
-    width:44%;
-    float:left;
-    margin: 2.5%;
-    border-radius: 8px;
+
+.contenedorHeader{
+    background-color:#EDDCD2;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+
+.contHeaderA, .contHeaderB, .contHeaderC, .contHeaderD {
+    flex-grow: 1;
+    flex-wrap: nowrap;
+}
+
+.contHeaderA{
+    width:12%;
+    padding: 2%;
+}
+.contHeaderA img {
     height: 50px;
-    background-color: green;
+    width: 50px;
 }
-.contenidoC{
-    width:10%;
-    float:right;
-    margin: 2.5%;
-    margin-left: 2%;
+
+.barrabusqueda {
+    display: flex;
 }
-.contenidoD{
-    width:10%;
-    float:right;
-    margin: 2.5%;
-    margin-left: 2%;
+
+.inputBusqueda {
+    width: 90%;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 5px;
+    padding-left: 2px;
+}
+.logoBusqueda {
+    order: 2;
+    width: 10%;
+    padding: 5px;
+    border-radius: 10px;
+    border-width: 1px;
+    display: none;
+}
+
+.contHeaderB {
+    width: 52%;
+    align-items: center;
+    padding-left: 15px;
+    }
+
+.contHeaderC {
+width: 10%;
+padding-left: 5%;
+}
+.contHeaderC img {
+    height: 25px;
+    width: 25px;
+}
+
+.contHeaderC p {
+    display: none;
+}
+
+.contHeaderD {
+width: 10%;
+padding-left: 5%;
+    }
+
+.contHeaderD img {
+    height: 25px;
+    width: 25px;
+}
+
+.contHeaderD p {
+    display: none;
 }
 
 body {
@@ -69,7 +119,7 @@ h1{
 }
 #AlmacenarNombre, #AlmacenarEmail, #AlmacenarTelefono{
     color: #DDBEA9;
-
+    
 }
 .yaTenesCuenta a{
     color:#CB997E;
@@ -87,7 +137,7 @@ h1{
     background-color: #CB997E;
     font-size: 20px;
     text-align: center;
-    width: 98%;
+    width: 55vw;
     border-color: #CB997E;
     padding:5px;
     color: white;
@@ -97,7 +147,59 @@ h1{
     border-width: 1px;
     border-color: #CB997E;
     padding: 7px;
+    width: 50vw;
 }
 input::placeholder{
 color:#CB997E;
 }/*revisar */
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+
+.contenedor{
+        background-color:#CCC;
+    }
+    
+.contHeaderA{
+        width: 5%;
+    }
+    
+.contHeaderB{
+        width: 55%;
+        padding-left: 5%;
+    }
+    
+.logoBusqueda {
+        display: block;
+    }
+.inputBusqueda {
+    padding-left: 10px;
+    }
+    
+.contHeaderC{
+        width: 1%;
+        padding-left: 5%;
+    }
+    
+.contHeaderD{
+        width: 1%;
+        padding-left: 2%;
+    }
+}
+    @media (max-width: 576px) {
+        .registroCompleto{
+            width: 90vw;
+        }
+        #AlmacenarNombre, #AlmacenarEmail, #AlmacenarTelefono, #AlmacenarContraseña, #AlmacenarContraseñax2 {
+            width: 85vw;
+        }
+        .botonCuenta{
+            width: 90vw;
+        }
+    }
