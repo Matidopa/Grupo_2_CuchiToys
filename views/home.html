@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="/css/StylesHome.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 rel="stylesheet" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<!--CSS BodyHome-->
-<link rel="stylesheet"href="/css/Styles-Body-Home.css">
 </head>
 <body>
     <header>
@@ -34,89 +30,91 @@ rel="stylesheet" />
 
                  </form> </div>
 
-            <div class="contHeaderC"> <a href > <img  src="/images/mi-Carrito.png" width= "40px" ></a> </div>
+            <div class="contHeaderC"> <a href > <img  src="/images/icono-carrito.png" width= "40px" ></a> </div>
         
-            <div class="contHeaderD"> <a href > <img  src="/images/Perfil.png" width= "40px" ></a>  </div>
+            <div class="contHeaderD"> <a href > <img  src="/images/icono-perfil.png" width= "40px" ></a>  </div>
 
         </div>
 
     </header>
-    <main>  
-        <!-- Slideshow container -->
-    <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUtX6ECcR8qIJ-uTNifMNB-rKKDUiGqCcSXQ&usqp=CAU" alt='carousel1' style="width:100%">
-          <div class="text">Caption Text</div>
+    <main>
+        <main>  
+            <!-- Slideshow container -->
+        <div class="slideshow-container">
+    
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUtX6ECcR8qIJ-uTNifMNB-rKKDUiGqCcSXQ&usqp=CAU" alt='carousel1' style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkCfL6cjcZmnluYcKJsO0J_eyBXmPmwTeIDg&usqp=CAU" alt='carousel2' style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShrZyGC1p-a1m_ZOKxRS410ZxRRHEkKXIc_A&usqp=CAU" alt='carousel3' style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkCfL6cjcZmnluYcKJsO0J_eyBXmPmwTeIDg&usqp=CAU" alt='carousel2' style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShrZyGC1p-a1m_ZOKxRS410ZxRRHEkKXIc_A&usqp=CAU" alt='carousel3' style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
-      
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-      
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
- 
- <script>
-                    var slideIndex = 1;
-                    showSlides(slideIndex);
-                    
-                    function plusSlides(n) {
-                      showSlides(slideIndex += n);
-                    }
-                    
-                    function currentSlide(n) {
-                      showSlides(slideIndex = n);
-                    }
-                    
-                    function showSlides(n) {
-                      var i;
-                      var slides = document.getElementsByClassName("mySlides");
-                      var dots = document.getElementsByClassName("dot");
-                      if (n > slides.length) {slideIndex = 1}    
-                      if (n < 1) {slideIndex = slides.length}
-                      for (i = 0; i < slides.length; i++) {
-                          slides[i].style.display = "none";  
-                      }
-                      for (i = 0; i < dots.length; i++) {
-                          dots[i].className = dots[i].className.replace(" active", "");
-                      }
-                      slides[slideIndex-1].style.display = "block";  
-                      dots[slideIndex-1].className += " active";
-                    }
-    </script>
-    <!-- Navbar central -->
-
-            <div class="nav-body" >  
-               <li class="nav-body-flex" >    
-                <a  class="nav-link">JUGUETES DESTACADOS</a>     
-                <a  class="nav-link">OFERTAS</a>  
-                <a  class="nav-link">ENVIOS</a>  
-                </li>  
-            </DIV> 
-           
-
-     </main>
+     
+     <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+                        
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+                        
+                        function showSlides(n) {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                          var dots = document.getElementsByClassName("dot");
+                          if (n > slides.length) {slideIndex = 1}    
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                              slides[i].style.display = "none";  
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                              dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].className += " active";
+                        }
+        </script>
+        <!-- Navbar central -->
+    
+                <div class="nav-body" >  
+                   <li class="nav-body-flex" >    
+                    <a  class="nav-link">JUGUETES DESTACADOS</a>     
+                    <a  class="nav-link">OFERTAS</a>  
+                    <a  class="nav-link">ENVIOS</a>  
+                    </li>  
+                </DIV> 
+               
+    
+         </main>
+    </main>
     <footer>
         <div class="contenedorFooter">
 
@@ -132,16 +130,43 @@ rel="stylesheet" />
 
             <div class="contFooterC"> 
 
-                <h2> Categorías</h2> 
-                <a href=""> cate 1</a>
-                <a href=""> cate 2</a>
-                <a href=""> cate 3</a>
+                <h2> Categorías </h2> 
+                <a href="" class = "categFooter"> cate 1</a>
+                <a href="" class = "categFooter"> cate 2</a>
+                <a href="" class = "categFooter"> cate 3</a>
+                <a href="" class = "categFooter"> cate 4</a>
+                <a href="" class = "categFooter"> cate 5</a>
+                <a href="" class = "categFooter"> cate 6</a>
+                <a href="" class = "categFooter"> cate 7</a>
             </div>
 
-            <div class="contFooterC"> <img src="/images/CT Logo.png" width= "105px"> </div>
+            <div class="contFooterD"> 
 
-            <div class="contFooterD"> <img src="/images/CT Logo.png" width= "105px"> </div>
+            <h2> Medios de pago:    </h2>
 
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" class="tarjetas" alt="visa">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" class="tarjetas" alt="mastercard">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" class="tarjetas" alt="amex">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" class="tarjetas" alt="diners">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" class="tarjetas" alt="ar_banelco">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" class="tarjetas" alt="ar_cabal">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" class="tarjetas" alt="ar_tarjeta-naranja">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" class="tarjetas" alt="ar_tarjeta-shopping">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" class="tarjetas"alt="mercadopago">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" class="tarjetas" alt="ar_argencard">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" class="tarjetas" alt="nativa">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" class="tarjetas" alt="ar_cencosud">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" class="tarjetas" alt="pagofacil">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" class="tarjetas" alt="rapipago">
+    </div>
+
+            <div class="contFooterE"> 
+
+                <h2> Medios de envíos: </h2>
+
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/ar/oca@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/ar/oca@2x.png" class="tarjetas" alt="ar_oca">
+            </div>
+    
         </div>
     </footer>
 </body>
