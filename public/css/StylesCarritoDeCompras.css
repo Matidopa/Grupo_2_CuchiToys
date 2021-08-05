@@ -1,0 +1,200 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Diseño del contenedor padre del Main*/
+.contenedorMain {
+    background-color: #EDDCD2;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Diseño del titulo del Main*/
+.contMainA h2{
+    font-family: unset;
+    padding-top: 10px;
+    margin-left: 6%;
+
+}
+
+  /* Linea divisoria para separar temas*/
+.contMain-lineaHorizontal {
+    background: #616368;
+    height: 1px;
+    width: 86%;
+    text-align: center;
+    margin-left: 6%;
+}
+
+/* Diseño del article (producto) del Main*/
+.contMainB {
+    display: flex;
+    background-color: #DDBEA9;
+    flex-wrap: nowrap;
+    width: 86%;
+    margin-left: 6%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+/* Diseño de la foto del producto del article del Main*/
+.contMainBA {
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+.contMainBA img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Diseño del nombre y contador del producto del article del Main*/
+.contMainBB {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.contMainBBA h2 {
+    font-size: 18px;
+    font-family: unset;
+    margin-left: 10%;
+}
+.contMainBBB {
+    display: flex;
+    border-radius: 5px;
+    width: 110px;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: rosybrown;
+}
+
+/* Diseño del tacho y precio del producto del article del Main*/
+.contMainBC {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: right;
+}
+.contMainBCA {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.contMainBCA img {
+    height: 25px;
+    width: 25px;
+}
+.contMainBCB {
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+/* Linea divisoria para separar temas*/
+.contMain-lineaHorizontal2 {
+    background: #616368;
+    height: 1px;
+    width: 86%;
+    text-align: center;
+    margin-left: 6%;
+    margin-top: 25px;
+}
+
+/* Diseño del Formato de Envio del Main*/
+.contMainC {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 86%;
+    margin-left: 6%;
+    margin-top: 10px;
+}
+.contMainC h2 {
+    font-size: 18px;
+    font-family: unset;
+    margin-bottom: 10px;
+}
+.contMainCB {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Diseño de la eleccion de envio del Formato de Envio del Main*/
+.contMainCBA {
+    display: flex;
+    margin-bottom: 10px;
+}
+.contMainCBAA {
+    width: 150px;
+}
+.contMainCBAB {
+    width: 150px;
+}
+
+/* Diseño del codigo postal del Formato de Envio del Main*/
+input {
+    width: 15%;
+}
+.contMainCBB {
+    margin-left: 8px;
+}
+
+/* Diseño del total del Main*/
+.contMainD {
+    display: flex;
+    width: 86%;
+    margin-left: 6%;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.contMainDB {
+    display: flex;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Diseño del continuar del Main*/
+.contMainE {
+    flex-direction: row-reverse;
+    display: flex;
+    width: 92%;
+}
+.contMainEA {
+    border-radius: 10px;
+    text-align: center;
+    background-color: #CB997E;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+@media (min-width: 576px) { 
+/* Cambio para que a partir de aca las fotos no se sigan agrandando*/
+.contMainBA {
+    width: 100px;
+}
+    
+}
+
+@media (min-width: 768px) {
+/* Cambio para que a partir de aca el tacho y el precio esten bien a la derecha*/
+    .contMainBC {
+        width: 30%;
+    }
+}
+   
+@media (min-width: 992px) {
+  
+}
+   
+@media (min-width: 1200px) {
+
+}
