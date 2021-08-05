@@ -1,0 +1,85 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Diseño del contenedor padre del Main*/
+.contenedorMain {
+    display: flex;
+    flex-direction: column;
+    color: #CB997E;
+    padding-bottom: 40px;
+}
+
+/* Tamano de las imagenes*/
+div img {
+    height: 150px;
+    width: 220px;
+
+}
+
+/* Diseño de los tres contenidos hijos*/
+.contMainA, .contMainB, .contMainC {
+    width: 90%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    margin-left: 5%;
+}
+
+.lineaVertical {
+    display: none;
+}
+
+@media (min-width: 576px) { 
+
+    .contMainA, .contMainB, .contMainC {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+}
+
+@media (min-width: 768px) {
+
+}
+   
+@media (min-width: 992px) {
+  
+    /* Cambio para que a partir de aca se vean los tres en horizontal*/
+    .contenedorMain {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+      /* Al estar en horizontal se suma la linea divisoria*/
+    .lineaVertical {
+        background: rgba(0,0,0,.2);
+        height: 100px;
+        position: relative;
+        top: 136px;
+        width: 1px;
+        display: block;
+    }
+
+    div img {
+        height: 200px;
+        width: 330px;
+    }
+
+    .contMainA, .contMainB, .contMainC {
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-left: 0px;
+        width: 30%;
+        padding-top: 5%;
+    }
+}
+   
+@media (min-width: 1200px) {
+
+}
+   
