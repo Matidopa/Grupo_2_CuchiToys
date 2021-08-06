@@ -44,80 +44,25 @@ rel="stylesheet" />
         </div>
 
     </header>
-    <main> 
-            <!-- Slideshow container -->
-        <div class="slideshow-container">
-    
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkCfL6cjcZmnluYcKJsO0J_eyBXmPmwTeIDg&usqp=CAU" alt='carousel1' style="width:100%">
-              <div class="text">Caption Text</div>
+    <main>
+            <!-- Busqueda por destacado o precio -->
+            <div class="destacadoOprecio">
+                <select name="destacado o precio" id="destacadoOprecio">
+                    <option>Más destacado</option>
+                    <option>Menor precio</option>
+                    <option>Mayor precio</option>
+                </select>
             </div>
-          
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUtX6ECcR8qIJ-uTNifMNB-rKKDUiGqCcSXQ&usqp=CAU" alt='carousel2' style="width:100%">
-              <div class="text">Caption Two</div>
-            </div>
-          
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShrZyGC1p-a1m_ZOKxRS410ZxRRHEkKXIc_A&usqp=CAU" alt='carousel3' style="width:100%">
-              <div class="text">Caption Three</div>
-            </div>
-          
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
-          
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-     
-     <script>
-                        var slideIndex = 1;
-                        showSlides(slideIndex);
-                        
-                        function plusSlides(n) {
-                          showSlides(slideIndex += n);
-                        }
-                        
-                        function currentSlide(n) {
-                          showSlides(slideIndex = n);
-                        }
-                        
-                        function showSlides(n) {
-                          var i;
-                          var slides = document.getElementsByClassName("mySlides");
-                          var dots = document.getElementsByClassName("dot");
-                          if (n > slides.length) {slideIndex = 1}    
-                          if (n < 1) {slideIndex = slides.length}
-                          for (i = 0; i < slides.length; i++) {
-                              slides[i].style.display = "none";  
-                          }
-                          for (i = 0; i < dots.length; i++) {
-                              dots[i].className = dots[i].className.replace(" active", "");
-                          }
-                          slides[slideIndex-1].style.display = "block";  
-                          dots[slideIndex-1].className += " active";
-                        }
-        </script>
-        <!-- Navbar central -->
-
-                <div class="nav-body" >  
-                   <li class="nav-body-flex" >    
-                    <a  class="nav-link">JUGUETES DESTACADOS</a>     
-                    <a  class="nav-link">OFERTAS</a>  
-                    <a  class="nav-link">ENVIOS</a>  
-                    </li>  
-                </DIV> 
             
+            <!-- Division de Articles -->
+            <div class="main-articles"> 
+                <!-- Section Categories -->
+                <section class='subcategories'>
+                    <h3>Categorías</h3>
+                        <li>Categoría 1</li>
+                        <li>Categoría 2</li>
+                        <li>Categoría 3</li>
+                </section>
                 <!-- Section Articles -->
                     <section>
                         <div class="products">
@@ -157,9 +102,46 @@ rel="stylesheet" />
                                     <h4 class="description">Minijuguetes</h4>
                                 </div>
                             </article>
+                            <article>
+                                <img src="https://i.pinimg.com/564x/18/e4/7b/18e47b0ced28363e44f1fd11d8a3c00e.jpg" alt="Cafetera" class="product_img">
+                                <div class="main-article">
+                                    <i class="fas fa-truck"></i>
+                                    <p class="price">$6.770</p>
+                                    <p class="discount">40% off</p>
+                                    <h4 class="description">20 encantadoras manualidades</h4>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="https://i.pinimg.com/564x/16/ec/5f/16ec5f0977f1f13dee8a3ad67504a809.jpg" alt="The fish into the shark’s mouth" class="product_img">
+                                <div class="main-article">
+                                    <i class="fas fa-truck"></i>
+                                    <p class="price">$230.000</p>
+                                    <p class="discount">20% off</p>
+                                    <h4 class="description">The fish into the shark’s mouth</h4>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="https://i.pinimg.com/564x/b0/15/07/b01507e2b8be4a6595f084a7c4effa72.jpg" alt="EDUCACIO I LAS TICS" class="product_img">
+                                <div class="main-article">
+                                    <i class="fas fa-truck"></i>
+                                    <p class="price">$70.500</p>
+                                    <p class="discount">10% off</p>
+                                <h4 class="description">EDUCACIO I LAS TICS</h4>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="https://i.pinimg.com/564x/40/b5/13/40b513800b8703a35bf5f02a92d60bf6.jpg" alt="Montessori juguetes de matemáticas de madera" class="product_img">
+                                <div class="main-article">
+                                    <i class="fas fa-truck"></i>
+                                    <p class="price">$23.200</p>
+                                    <p class="discount">5% off</p>
+                                    <h4 class="description">Montessori matemáticas</h4>
+                                </div>
+                            </article>
                         </div>  
-                    </section>
-    </main>
+                    </section>    
+                </div>
+        </main>
     <footer>
         <div class="contenedorFooter">  <!-- Contenedor padre del Footer -->
 
