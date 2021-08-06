@@ -1,65 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> </title>
     <link rel="stylesheet" href="/css/StyleDetalleDeProducto.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-rel="stylesheet"/>
+rel="stylesheet" />
 </head>
 <body>
     <header>
 
-        <div class="contenedor">
+        <div class="banner">
+            <h2>Envios a todo el País - Envíos en Caba en el día - 10 % OFF en Efectivo </h2>
+        </div>
+        <div class="contenedorHeader">
     
-            <div class="contenidoA"> <img src="/images/CT Logo.png" width= "105px"> </div>
+            <div class="contHeaderA"> <img src="/images/CT Logo.png" width= "105px"> </div>
 
-            <div class="contenidoB"> <form action="/my-handling-form-page" method="post">
-                <div class="contenidoBA">
-                    <button type="submit" style="float: right;" > <i class="fas fa-search"></i> </button>
+            <div class="contHeaderB"> 
+                
+                <form action="/my-handling-form-page" method="post">
+
+                <div class="barraBusqueda">
+                    <button type="submit" style="float: right;" class = "logoBusqueda" > <i class="fas fa-search"  ></i> </button>
                     <label for="buscado"></label>
-                    <input type="text" id="buscado" name="textoBuscado" size = 75% value = "¿Qué estás buscando?" >
+                    <input class = "inputBusqueda" type="textarea" id="buscado" name="textoBuscado" size = 65% placeholder = "¿Qué estás buscando?" >
                 </div>
-            </form> </div>
 
-            <div class="contenidoC"> <a href = ""> <i class="fas fa-cart-plus" ></i>   </a> </div>
+                 </form> </div>
+
+            <div class="contHeaderC"> <a href > <img  src="/images/icono-carrito.png" width= "40px" ></a> </div>
         
-            <div class="contenidoD"> <a href = ""> <i class="fas fa-user-circle" ></i> </a> </div>
+            <div class="contHeaderD"> <a href > <img  src="/images/icono-perfil.png" width= "40px" ></a>  </div>
 
         </div>
 
     </header>
     <main>
 
-        <div class="categoria"><a href="">inicio</a> > <a href="">sub categoria</a> > <a href=""> sub categoriax2</a> </div>
-        
-        <img class="imagencarrucel" src="/images/CT Logo.png" width= "450px"><!-- agregar la carrucel-->
-        
-        <h1>Nombre del producto</h1>
+        <div class="categoria">
+            <a href="">inicio</a> > <a href="">sub categoria</a> > <a href=""> sub categoriax2</a> 
+        </div>
+        <div class="cotenedorMain">
+                <img class="imagencarrucel" src="/images/CT Logo.png" width= "350px"><!-- agregar la carrucel-->
+            <div class="info">
+            <h1>Nombre del producto</h1>
 
-       <div>$XXX</div>
+        <div class="precio">$XXX</div>
 
-       <div class="sumarCarrito">
-        <i class="fas fa-minus"></i> 1 <i class="fas fa-plus"></i>
+        <div class="contenedorCarritoYboton">
+        <div class="sumarCarrito"> 
+                <div class= "contMainBBBA"> <a href=""> <h2> - </h2> </a> </div>
+                <div class= "contMainBBBB"> <a href=""> <h2> 1 </h2> </a> </div>
+                <div class= "contMainBBBC"> <a href=""> <h2> + </h2> </a> </div>
+            </div>
+            <button class="botonCarrito" type="submit"> Sumar al carrito </button>
         </div>
-        <div class="metodoDePago">
-            Metodo de pago
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
+            <div class="metodoDePago">
+                <div class="cont1">Metodo de pago</div>
+                    <div class="cont2">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" class="tarjetas" alt="visa">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" class="tarjetas" alt="mastercard">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" class="tarjetas" alt="amex">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" class="tarjetas" alt="diners">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" class="tarjetas" alt="ar_banelco">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" class="tarjetas" alt="ar_cabal">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" class="tarjetas" alt="ar_tarjeta-naranja">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" class="tarjetas" alt="ar_tarjeta-shopping">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" class="tarjetas"alt="mercadopago">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" class="tarjetas" alt="ar_argencard">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" class="tarjetas" alt="nativa">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" class="tarjetas" alt="ar_cencosud">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" class="tarjetas" alt="pagofacil">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" class="tarjetas" alt="rapipago">
+                    </div>
+            </div>
+            <div class="LocalPublico">
+                
+                <div class="contenedorLocalA" > <i class="fas fa-map-marker-alt"id="contL"></i> Local al publico</div>
+                <div class="direccion1">direccion del local y hora de atencion</div>
+            </div>
+        
+            <div class="detalleProducto">
+                detalle de producto
+            </div>
+            </div>
         </div>
-        <div class="LocalPublico">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>Local al publico</div>
-            <div>direccion del local y hora de atencion</div>
-        </div>
-        <button class="botonCarrito" type="submit"> <div>Sumar al carrito</div> </button>
-        <div>
-            detalle de producto
-        </div>
+        
     </main>
     <footer>
+        <div class="contenedorFooter">
+
+            <div class="contFooterA"> <img src="/images/CT Logo.png" width= "105px"> </div>
+
+            <div class="contFooterB"> 
+
+                <h2> Contacto</h2> 
+                <p>Ejemplo@gmail.com</p>
+                <p>+54 911 27284692</p>
+                <p>direccion del lugar</p>
+            </div>
+
+            <div class="contFooterC"> 
+
+                <h2> Categorías </h2> 
+                <a href="" class = "categFooter"> cate 1</a>
+                <a href="" class = "categFooter"> cate 2</a>
+                <a href="" class = "categFooter"> cate 3</a>
+                <a href="" class = "categFooter"> cate 4</a>
+                <a href="" class = "categFooter"> cate 5</a>
+                <a href="" class = "categFooter"> cate 6</a>
+                <a href="" class = "categFooter"> cate 7</a>
+            </div>
+
+            <div class="contFooterD"> 
+
+            <h2> Medios de pago:    </h2>
+
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" class="tarjetas" alt="visa">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" class="tarjetas" alt="mastercard">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" class="tarjetas" alt="amex">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" class="tarjetas" alt="diners">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" class="tarjetas" alt="ar_banelco">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" class="tarjetas" alt="ar_cabal">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" class="tarjetas" alt="ar_tarjeta-naranja">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" class="tarjetas" alt="ar_tarjeta-shopping">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" class="tarjetas"alt="mercadopago">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" class="tarjetas" alt="ar_argencard">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" class="tarjetas" alt="nativa">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" class="tarjetas" alt="ar_cencosud">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" class="tarjetas" alt="pagofacil">
+<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" class="tarjetas" alt="rapipago">
+    </div>
+
+            <div class="contFooterE"> 
+
+                <h2> Medios de envíos: </h2>
+
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/ar/oca@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/ar/oca@2x.png" class="tarjetas" alt="ar_oca">
+            </div>
+    
+        </div>
+    </footer>
 </body>
 </html> 
