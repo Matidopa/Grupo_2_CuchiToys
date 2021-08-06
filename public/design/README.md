@@ -7,3 +7,5 @@ Header & Footer = Montserrat Bold https://fonts.google.com/specimen/Montserrat?q
 
 
 Body = Roboto Regular https://fonts.google.com/specimen/Roboto?query=robo
+
+pagina de los iconos: https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free

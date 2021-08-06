@@ -1,0 +1,202 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Diseño del contenedor padre del Main*/
+.contenedorMain {
+    background-color: #EDDCD2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Diseño del contenedor de la caja de opciones de envio del Main*/
+.contMainA{
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    background-color: #DDBEA9;
+    padding: 10px;
+}
+
+.contMainA h2 {
+   font-size: 22px;
+}
+
+  /* Linea divisoria para separar temas*/
+.lineaHorizontal {
+    background: #616368;
+    height: 1px;
+    width: %;
+    margin-left: 5px;
+}
+
+/* Diseño de la caja de la direccion del usuario del Main*/
+.contMainAB {
+    display: flex;
+    width: 95%;
+    height: 100px;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #EDDCD2;
+}
+
+/* Diseño del fondo blanco del logo de maps del Main*/
+.contMainABA {
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 8%;
+}
+
+/* Diseño del logo de maps del Main*/
+.contMainABA i{
+    position: absolute;
+    left: 13px;
+    top:12px ;
+}
+
+.contMainABB {
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+/* "paquete 1" del Main*/
+.contMainAC {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Diseño de la caja del producto del Main*/
+.contMainAD {
+    display: flex;
+    width: 95%;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    padding-top: 15px;
+    border-radius: 10px;
+    background-color: #EDDCD2;
+}
+
+/* Diseño de la parte de arriba de caja del producto del Main*/
+.contMainADA {
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+}
+
+/* Linea divisoria para separar temas*/
+.lineaHorizontal2 {
+    background: #616368;
+    height: 1px;
+    width: 95%;
+    text-align: center;
+}
+
+/* Diseño de la parte de abajo de la caja del producto del Main*/
+.contMainADB {
+    display: flex;
+    width: 86%;
+    margin-top: 10px;
+}
+
+/* Diseño de la foto de al caja del producto del Main*/
+.contMainADBA{
+    width: 60px;
+    border-radius: 10px;
+}
+
+/* Diseño del titulo y unidades de la caja del producto del Main*/
+.contMainADBB{
+    width: 60%;
+    padding-left: 10px;
+}
+
+/* Diseño del precio de la caja del producto del Main*/
+.contMainADBC{
+    margin-top: 25px;
+    padding-left: 21%;
+}
+
+
+/* Diseño de la caja de resumen de compra del Main*/
+.contMainB {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    background-color:#DDBEA9;
+    margin-top: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 10px;
+
+}
+
+.contMainBA {
+    font-size: 18px;
+}
+
+/* Diseño del cuerpo de la caja de resumen de compra del Main*/
+.contMainBB, .contMainBC{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Diseño del boton la caja de resumen de compra del Main*/
+.contMainBD{
+    padding: 10px;
+    align-self:center;
+    transform: background-color 600ms;
+    border-radius: 10px;
+
+}
+.contMainBD:hover {
+    background-color: #CB997E;
+}
+
+@media (min-width: 576px) { 
+    
+}
+
+@media (min-width: 768px) {
+
+}
+   
+@media (min-width: 992px) {
+/* a partir de aca el resumen de compra se posiciona al lado de las opciones de envio*/
+  .contenedorMain {
+    flex-direction: row;
+  }
+  .contMainA {
+      width: 60%;
+      margin: 5%;
+  }
+  .contMainB {
+    width: 25%;
+    margin: 5%;
+    margin-left: 0%;
+}
+
+ .contMainBD {
+    margin-top: 50%;
+ }
+}
+   
+@media (min-width: 1200px) {
+
+}
