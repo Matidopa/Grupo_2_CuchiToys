@@ -32,3 +32,6 @@ app.get('/carritoDeCompras',(req,res)=>{
 app.get('/categoriasDeJuguetes',(req,res)=>{
     res.sendFile (path.join(__dirname,'views/categoriasDeJuguetes.html'))
 });
+app.get('/gestionDePago',(req,res)=>{
+    res.sendFile (path.join(__dirname,'views/gestionDePago.html'))
+});

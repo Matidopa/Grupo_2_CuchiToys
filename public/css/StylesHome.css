@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #FFF1E6;
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Diseño del banner de arriba de todo*/
 .banner {
     background-color:rgb(255, 241, 230);

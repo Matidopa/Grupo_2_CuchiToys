@@ -202,13 +202,6 @@ padding-left: 10px;
     width: 175px;
 }
 
-
-body {
-    background-color: green;
-}
-
-
-
 }
 
 @media (min-width: 768px) {
@@ -238,8 +231,8 @@ body {
     
 }
 body {
-    background-color: white;
-    font-family: Roboto Regular;
+    background-color: #FFF1E6;
+    font-family: 'Roboto', sans-serif;
 }
 .categoria {
     color: #DDBEA9;
@@ -319,21 +312,28 @@ color:#DDBEA9;
     margin-top: 4vh;
     margin-bottom: 3vh;
     display:flex;
+    align-items: center;
 }
-#contL{
-    margin-right: 2vw;
+.contenedorLocalA img{
+    width: 50px;
 }
 .direccion1{
 padding:2%;
 margin-left: 4vw;
 border-radius:10px;
-width: 85vw;
+width: 30vw;
+background-color: white;
+border-radius: 10px;
 }
 .detalleProducto{
+    margin-top: 10px;
     padding:2%;
     margin-left: 4vw;
-    border-radius:10px;
-    width: 85vw;
+    width: 30vw;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
 }
 
 @media (min-width: 768px){

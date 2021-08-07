@@ -1,3 +1,5 @@
+/* Cambiar el footer para que aparezca uno oabajo de otro hasta 768*/
+
 * {
     padding: 0px;
     margin: 0px;
@@ -30,7 +32,7 @@
 .lineaHorizontal {
     background: #616368;
     height: 1px;
-    width: %;
+    width: 95%;
     margin-left: 5px;
 }
 
