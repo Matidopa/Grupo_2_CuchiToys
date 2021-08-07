@@ -2,12 +2,11 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-}
-
-body {
-    background-color: #FFF1E6;
     font-family: 'Roboto', sans-serif;
 }
+
+/* Diseño del header*/
+
 
 /* Diseño del banner de arriba de todo*/
 .banner {
@@ -109,46 +108,96 @@ padding-left: 5%;
     display: none;
 }
 
-body {
-    background-color: gray;
+.contenedorNav a{
+    text-decoration:none;
+    color:#CB997E;
+}
+
+/* Diseño del contenedor del nav del Header*/
+.contenedorNav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:#EDDCD2;
+    align-items: center;
+}
+
+/* opciones del nav que se ven cuando estas en 768px*/
+.contNavB {
+    display: none;
+}
+
+/* circulos que se ven cuando estas en movile*/
+.circuloSeparadorA {
+    background-color:#CB997E;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+/* circulos que se ven cuando estas en 768px*/
+.circuloSeparadorB {
+    display: none;
+}
+
+
+/* Linea divisoria para separar temas*/
+.lineaHorizontal {
+    background: #CB997E;
+    height: 1px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Diseño del contenedor padre del Footer*/
 .contenedorFooter {
-    background-color: rgb(221, 190, 169);
+    background-color: #EDDCD2;
     width: 100%;
     display: flex;
     justify-content:start;
     flex-wrap: wrap;
     justify-content:inherit;
+    color: #CB997E;
 }
 
 /* Diseño del contenedor del logo del Footer*/
 .contFooterA {
-    width: 100px;
-    padding-left: 12px;
-    padding-top: 25px;
+    width: 100%;
+    padding-left: 30%;
 }
 
 /* Diseño del logo del Footer*/
 .contFooterA img {
-    height: 75px;
-    width: 75px;
+    width: 50%;
 }
 
 /* Diseño de los títulos del Footer*/
 .contFooterB h2, .contFooterC h2, .contFooterD h2, .contFooterE h2{
     font-size: 16px;
     padding-right: 25px;
-    font-family: unset;
  }
+
+   /* Linea divisoria para separar temas*/
+.contFooter-lineaHorizontal {
+    background: #616368;
+    height: 1px;
+    width: 74%;
+    text-align: center;
+    margin-left: 13%;
+    margin-top: 15px;
+}
+
+.contFooter-lineaVertical {
+display: none;
+}
 
  /* Diseño del contenedor del contacto del Footer*/
  .contFooterB {
      display: flex;
      flex-direction: column;
-     width: 185px;
-     padding-left: 35px;
+     width: 100%;
+     padding-left: 35%;
      padding-top: 25px;
  }
 
@@ -156,21 +205,25 @@ body {
  .contFooterC {
     display: flex;
     flex-wrap: wrap;
-    width: 150px;
-    padding-left:10px;
+    width: 100%;
+    padding-left: 35%;
     height: 125px;
-    padding-right: 15px;
     padding-top: 25px;
+    padding-right: 30%;
 }
 
+/* Diseño de los href del footer*/
 .contFooterC a {
     padding-left: 10px;
+    text-decoration:none;
+    color:#CB997E;
 }
 
  /* Diseño del contenedor de los medios de pago del Footer*/
 .contFooterD {
-    width: 40%;
-    padding-left:2%;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
     display: flex;
     flex-wrap: wrap;
     padding-top: 25px;
@@ -179,8 +232,9 @@ body {
 
  /* Diseño del contenedor del medio de envio del Footer*/
 .contFooterE {
-    padding-left: 30px;
     padding-top: 25px;
+    width: 100%;
+    padding-left: 35%;
 }
 
  /* Diseño de las fotos de las tarjetas del Footer*/
@@ -205,6 +259,7 @@ body {
     padding-left: 5%;
 }
 
+/* Diseño del input del Header*/
 .logoBusqueda {
     display: block;
 }
@@ -236,83 +291,106 @@ padding-left: 10px;
 .contFooterB h2, .contFooterC h2, .contFooterD h2 {
     padding-right: 100px;
  }
- 
-/* Diseño del contenedor de medio de envio del Footer*/
-.contFooterE {
-    width: 175px;
-}
-
-
-body {
-    background-color: #F0EFEB;
-}
-
-
 
 }
 
 @media (min-width: 768px) {
 
+    .contNavB {
+        display: block;
+    }
+
+    .circuloSeparadorB {
+        background-color:#CB997E;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        display: block;
+    }
+    .contenedorNav {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
  /* Diseño de los títulos del Footer*/
-.contFooterB h2, .contFooterC h2, .contFooterD h2{
-    padding-right: 175px;
+.contFooterB h2{
+    padding-right: 75%;
  }
+
+ .contenedorFooter {
+     justify-content: space-between;
+ }
+
+ .contFooterA {
+    margin-bottom: 30px;
+    padding-left: 0%;
+    width: 16%;
+}
+
+.contFooterA img {
+    width: 90%;
+    padding-top: 15px;
+}
+.contFooterB {
+    margin-bottom: 30px;
+    padding-left: 0%;
+    width: 20%;
+}
+.contFooterC {
+    margin-bottom: 30px;
+    padding-left: 0%;
+    width: 18%;
+    padding-right: 0px;
+}
+ .contFooterD {
+     margin-bottom: 30px;
+     padding-left: 0%;
+     width: 18%;
+     padding-right: 2%;
+ }
+ .contFooterE {
+    margin-bottom: 30px;
+    padding-left: 0%;
+    width: 18%;
+}
+a.categFooter {
+    width: 90%;
+}
+
+  /* Al estar en horizontal se suma la linea divisoria*/
+.contFooter-lineaVertical {
+    background: #CB997E;
+    height: 150px;
+    top: 136px;
+    width: 3px;
+    display: block;
+    border-radius: 30%;
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    }
+
+/* Al estar en horizontal se le quita la linea horizontal de movile*/
+.contFooter-lineaHorizontal {
+    display: none;
+}
+.contFooterB h2, .contFooterE h2, .contFooterC h2, .contFooterD h2 {
+    padding-right: 0px;
+    padding-bottom: 15px;
+ }
+
 }
 
 
 @media (min-width: 992px) {
-
-/* Diseño de los títulos del Footer*/
-    .contFooterB h2, .contFooterC h2, .contFooterD h2{
-
-        padding-right: 300px;
-     }
     
 }
 
 
 @media (min-width: 1200px) {
 
-/* Diseño del contenedor padre del Footer*/
-    .contenedorFooter {
-        justify-content:space-between;
-    }
-
-/* Diseño del contenedor del logo del Footer*/
-    .contFooterA {
-        width: 20%;
-        padding-left: 35px;
-        padding-top: 5px;
-    }
-
-/* Diseño del logo del Footer*/
-    .contFooterA img {
-        height: 175px;
-        width: 175px;
-    }
-
- /* Diseño del contenedor del contacto del Footer*/
-    .contFooterB {
-        width: 20%; 
-    }
-
-/* Diseño del contenedor de las categorías del Footer*/
-    .contFooterC {
-        width: 20%;   
-    }
     .contFooterD h2 {
-        padding-right: 200px;
+        padding-right: 80px;
     }
 
-/* Diseño del contenedor de los medios de pago del Footer*/
-    .contFooterD {
-        width: 25%;
-    }
-
-/* Diseño del contenedor del medio de envio del Footer*/
-.contFooterE {
-        width: 15%;
-    }
-
-    
 }
