@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> </title>
+    <title> Detalle de Producto</title>
     <link rel="stylesheet" href="/css/StyleDetalleDeProducto.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 rel="stylesheet" />
@@ -14,14 +14,16 @@ rel="stylesheet" />
 <body>
     <header>
 
-        <div class="banner">
+        <div class="banner">  <!-- Banner de arriba de todo, por ahora estatico, cuando sepamos cómo aplicarle JS va a ser dinámico-->
             <h2>Envios a todo el País - Envíos en Caba en el día - 10 % OFF en Efectivo </h2>
         </div>
-        <div class="contenedorHeader">
+        <div class="contenedorHeader"> <!-- Contenedor de todo lo que se encuentra en el Header-->
     
-            <div class="contHeaderA"> <img src="/images/CT Logo.png" width= "105px"> </div>
+            <div class="contHeaderA"> <!-- Contenedor del logo-->
+                 <img src="/images/CT Logo.png" width= "105px"> 
+            </div>
 
-            <div class="contHeaderB"> 
+            <div class="contHeaderB"> <!-- Contenedor de la barra de búsqueda-->
                 
                 <form action="/my-handling-form-page" method="post">
 
@@ -33,12 +35,32 @@ rel="stylesheet" />
 
                  </form> </div>
 
-            <div class="contHeaderC"> <a href > <img  src="/images/icono-carrito.png" width= "40px" ></a> </div>
+            <div class="contHeaderC"> <!-- Contenedor del logo del carrito-->
+                <a href > <img  src="/images/icono-carrito.png" width= "40px" ></a> 
+            </div>
         
-            <div class="contHeaderD"> <a href > <img  src="/images/icono-perfil.png" width= "40px" ></a>  </div>
+            <div class="contHeaderD"> <!-- Contenedor del logo del perfil-->
+                <a href > <img  src="/images/icono-perfil.png" width= "40px" ></a> 
+             </div>
 
         </div>
-
+        <div class = "lineaHorizontalHeader"> </div> <!-- linea que separa al nav-->
+        <nav> 
+            <div class = "contenedorNav"> <!-- Contenedor de todo el nav-->
+                <div class = "circuloSeparadorA"> </div> 
+                <a href = "" class = "contNavA"> <h4> Quienes somos </h4> </a>
+                <div class = "circuloSeparadorA"> </div>
+                <a href = "" class = "contrNavA"> <h4> Juguetes </h4> </a>
+                <div class = "circuloSeparadorA"> </div>
+                <a href = "" class = "contNavB"> <h4> Cómo Comprar </h4> </a>
+                <div class = "circuloSeparadorB"> </div>
+                <a href = "" class = "contNavB"> <h4> Contacto </h4> </a>
+                <div class = "circuloSeparadorB"> </div>
+                <a href = "" class = "contNavB"> <h4> Preguntas Frencuentes </h4> </a>
+                <div class = "circuloSeparadorB"> </div>
+            </div>
+        </nav>
+        <div class = "lineaHorizontalHeader"> </div>  <!-- linea que separa al nav-->
     </header>
     <main>
 
@@ -46,7 +68,7 @@ rel="stylesheet" />
             <a href="">inicio</a> > <a href="">sub categoria</a> > <a href=""> sub categoriax2</a> 
         </div>
         <div class="cotenedorMain">
-                <img class="imagencarrucel" src="/images/CT Logo.png" width= "350px"><!-- agregar la carrucel-->
+                <img class="imagencarrucel" src="/images/CT Logo.png" >
             <div class="info">
             <h1>Nombre del producto</h1>
 
@@ -85,28 +107,36 @@ rel="stylesheet" />
                 <div class="direccion1">direccion del local y hora de atencion</div>
             </div>
         
-            <div class="detalleProducto">
-                detalle de producto
-            </div>
+                <div class="detalleProducto">
+                    detalle de producto
+                </div>  
             </div>
         </div>
         
     </main>
     <footer>
-        <div class="contenedorFooter">
-
-            <div class="contFooterA"> <img src="/images/CT Logo.png" width= "105px"> </div>
-
-            <div class="contFooterB"> 
-
+        <div class="contenedorFooter">  <!-- Contenedor padre del Footer -->
+    
+            <div class="contFooterA"> <!-- Contenedor del logo del Footer -->
+                <img src="/images/CT Logo.png" width= "105px"> 
+            </div>
+    
+            <div class= "contFooter-lineaHorizontal"> </div>
+            <div class= "contFooter-lineaVertical"> </div>
+    
+            <div class="contFooterB">   <!-- Contenedor del contacto del Footer -->
+    
                 <h2> Contacto</h2> 
                 <p>Ejemplo@gmail.com</p>
                 <p>+54 911 27284692</p>
                 <p>direccion del lugar</p>
             </div>
-
-            <div class="contFooterC"> 
-
+    
+            <div class= "contFooter-lineaHorizontal"> </div>
+            <div class= "contFooter-lineaVertical"> </div>
+    
+            <div class="contFooterC">  <!-- Contenedor de categorías del Footer -->
+    
                 <h2> Categorías </h2> 
                 <a href="" class = "categFooter"> cate 1</a>
                 <a href="" class = "categFooter"> cate 2</a>
@@ -116,33 +146,39 @@ rel="stylesheet" />
                 <a href="" class = "categFooter"> cate 6</a>
                 <a href="" class = "categFooter"> cate 7</a>
             </div>
-
-            <div class="contFooterD"> 
-
-            <h2> Medios de pago:    </h2>
-
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" class="tarjetas" alt="visa">
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" class="tarjetas" alt="mastercard">
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" class="tarjetas" alt="amex">
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" class="tarjetas" alt="diners">
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" class="tarjetas" alt="ar_banelco">
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" class="tarjetas" alt="ar_cabal">
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" class="tarjetas" alt="ar_tarjeta-naranja">
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" class="tarjetas" alt="ar_tarjeta-shopping">
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" class="tarjetas"alt="mercadopago">
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" class="tarjetas" alt="ar_argencard">
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" class="tarjetas" alt="nativa">
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" class="tarjetas" alt="ar_cencosud">
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" class="tarjetas" alt="pagofacil">
-<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" class="tarjetas" alt="rapipago">
-    </div>
-
-            <div class="contFooterE"> 
-
+    
+            <div class= "contFooter-lineaHorizontal"> </div>
+            <div class= "contFooter-lineaVertical"> </div>
+    
+            <div class="contFooterE">  <!-- Contenedor de medios de envio del Footer -->
+    
                 <h2> Medios de envíos: </h2>
-
+    
                 <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/ar/oca@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/ar/oca@2x.png" class="tarjetas" alt="ar_oca">
             </div>
+    
+            <div class= "contFooter-lineaHorizontal"> </div>
+            <div class= "contFooter-lineaVertical"> </div>
+    
+            <div class="contFooterD">  <!-- Contenedor de Medios de pago del Footer -->
+    
+            <h2> Medios de pago:    </h2>
+    
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" class="tarjetas" alt="visa">
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" class="tarjetas" alt="mastercard">
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" class="tarjetas" alt="amex">
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" class="tarjetas" alt="diners">
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" class="tarjetas" alt="ar_banelco">
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" class="tarjetas" alt="ar_cabal">
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" class="tarjetas" alt="ar_tarjeta-naranja">
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" class="tarjetas" alt="ar_tarjeta-shopping">
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" class="tarjetas"alt="mercadopago">
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" class="tarjetas" alt="ar_argencard">
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" class="tarjetas" alt="nativa">
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" class="tarjetas" alt="ar_cencosud">
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" class="tarjetas" alt="pagofacil">
+    <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" class="tarjetas" alt="rapipago">
+    </div>
     
         </div>
     </footer>
