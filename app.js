@@ -7,7 +7,7 @@ const publicPath = path.resolve(__dirname, "./public");
 
 app.use(express.static(publicPath));
 
-app.listen(process.env.PORT || function(){
+app.listen(process.env.PORT || 3000,  function(){
     console.log(`Example app listening at http://localhost:${port}`)
 });
 
