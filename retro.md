@@ -16,3 +16,5 @@ Retrospectiva dinámica de la estrella de mar al 02-08-2021:
         - Modificaciones en las páginas generales sin avisar.
 
     5. Dejar de hacer.
+
+    Retrospectiva dinámica de la estrella de mar al x-x-2021  (Sprint 3):

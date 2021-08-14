@@ -143,13 +143,16 @@ padding-left: 5%;
 }
 
 
+
 /* Linea divisoria para separar temas*/
-.lineaHorizontalHeader {
+.lineaHorizontal {
     background: #CB997E;
     height: 1px;
     width: 100%;
     text-align: center;
 }
+
+
 /*Diseño del Footer */
 
 
@@ -250,7 +253,7 @@ display: none;
 }
 
 
- /* Cambios en el diseño a partir de 576px EN HEADER Y FOOTER, los cambios del MAIN estan abajo*/
+/* -----------------Cambios en el diseño a partir de 576px EN HEADER Y FOOTER, ----------------*/
 /*---------------------------------------------------------------------------------------------*/
 
 
@@ -405,8 +408,210 @@ display: none;
     }
     
 
-/* Cambios en el diseño a partir de 576px EN HMAIN, los cambios del HEADER Y FOOTER estan arriba*/
-/*---------------------------------------------------------------------------------------------*/
+/*-------------------------------------  Diseño del Carrito de compra  ---------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
+
+/* Diseño del contenedor padre del Main*/
+.carritoDeCompra .contenedorMain {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF1E6;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Diseño del titulo del Main*/
+.carritoDeCompra .contMainA h2{
+    font-family: unset;
+    padding-top: 10px;
+    margin-left: 6%;
+
+}
+
+  /* Linea divisoria para separar temas*/
+  .carritoDeCompra .contMain-lineaHorizontal {
+    background: #616368;
+    height: 1px;
+    width: 86%;
+    text-align: center;
+    margin-left: 6%;
+}
+
+/* Diseño del article (producto) del Main*/
+.carritoDeCompra .contMainB {
+    display: flex;
+    background-color: #DDBEA9;
+    flex-wrap: nowrap;
+    width: 86%;
+    margin-left: 6%;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+/* Diseño de la foto del producto del article del Main*/
+.carritoDeCompra .contMainBA {
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+.carritoDeCompra .contMainBA img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Diseño del nombre y contador del producto del article del Main*/
+.carritoDeCompra .contMainBB {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.carritoDeCompra .contMainBBA a,.contMainBBBA a,.contMainBBBB a,.contMainBBBC a {
+    text-decoration:none;
+    color: black;
+}
+.carritoDeCompra .contMainBBA h2 {
+    font-size: 18px;
+    font-family: unset;
+    margin-left: 10%;
+}
+.carritoDeCompra .contMainBBB {
+    display: flex;
+    border-radius: 5px;
+    width: 110px;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10%;
+    margin-top: 20px;
+    background-color: rosybrown;
+}
+
+/* Diseño del tacho y precio del producto del article del Main*/
+.carritoDeCompra .contMainBC {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: right;
+}
+.carritoDeCompra .contMainBCA {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.carritoDeCompra .contMainBCA img {
+    height: 25px;
+    width: 25px;
+}
+.carritoDeCompra .contMainBCB {
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+/* Linea divisoria para separar temas*/
+.carritoDeCompra .contMain-lineaHorizontal2 {
+    background: #616368;
+    height: 1px;
+    width: 86%;
+    text-align: center;
+    margin-left: 6%;
+    margin-top: 25px;
+}
+
+/* Diseño del Formato de Envio del Main*/
+.carritoDeCompra .contMainC {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 86%;
+    margin-left: 6%;
+    margin-top: 10px;
+}
+.carritoDeCompra .contMainC h2 {
+    font-size: 18px;
+    font-family: unset;
+    margin-bottom: 10px;
+}
+.carritoDeCompra .contMainCB {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Diseño de la eleccion de envio del Formato de Envio del Main*/
+.carritoDeCompra .contMainCBA {
+    display: flex;
+    margin-bottom: 10px;
+}
+.carritoDeCompra .contMainCBAA {
+    width: 150px;
+}
+.carritoDeCompra .contMainCBAB {
+    width: 150px;
+}
+
+/* Diseño del codigo postal del Formato de Envio del Main*/
+input {
+    width: 15%;
+}
+.carritoDeCompra .contMainCBB {
+    margin-left: 8px;
+}
+
+/* Diseño del total del Main*/
+.carritoDeCompra .contMainD {
+    display: flex;
+    width: 86%;
+    margin-left: 6%;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.carritoDeCompra .contMainDB {
+    display: flex;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Diseño del continuar del Main*/
+.carritoDeCompra .contMainE {
+    flex-direction: row-reverse;
+    display: flex;
+    width: 92%;
+}
+.carritoDeCompra .contMainEA {
+    border-radius: 10px;
+    text-align: center;
+    background-color: #CB997E;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Cambios en el diseño a partir de 576px EN MAIN*/
+
+@media (min-width: 576px) { 
+    /* Cambio para que a partir de aca las fotos no se sigan agrandando*/
+    .carritoDeCompra .contMainBA {
+        width: 100px;
+    }
+        
+    }
+    
+    @media (min-width: 768px) {
+    /* Cambio para que a partir de aca el tacho y el precio esten bien a la derecha*/
+    .carritoDeCompra .contMainBC {
+            width: 30%;
+        }
+    }
+
+/*-------------------------------------  Diseño del Detalle de Producto  -------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
 
 .detalleDeProducto body {
     background-color: #FFF1E6;
@@ -550,5 +755,189 @@ border-radius: 10px;
 }
 
 
+/*-------------------------------------  Diseño del Gestion de Pago  -----------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
+.gestionDePago .contenedorMain {
+    background-color: #F0EFEB;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Diseño del contenedor de la caja de opciones de envio del Main*/
+.gestionDePago .contMainA{
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    background-color: #DDBEA9;
+    padding: 10px;
+}
+
+.gestionDePago .contMainA h2 {
+   font-size: 22px;
+}
+
+  /* Linea divisoria para separar temas*/
+  .gestionDePago .lineaHorizontal {
+    background: #616368;
+    height: 1px;
+    width: 95%;
+    margin-left: 5px;
+}
+
+/* Diseño de la caja de la direccion del usuario del Main*/
+.gestionDePago .contMainAB {
+    display: flex;
+    width: 95%;
+    height: 100px;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #EDDCD2;
+}
+
+/* Diseño del fondo blanco del logo de maps del Main*/
+.gestionDePago .contMainABA {
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 8%;
+}
+
+/* Diseño del logo de maps del Main*/
+.gestionDePago .contMainABA i{
+    position: absolute;
+    left: 13px;
+    top:12px ;
+}
+
+.gestionDePago .contMainABB {
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+/* "paquete 1" del Main*/
+.gestionDePago .contMainAC {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Diseño de la caja del producto del Main*/
+.gestionDePago .contMainAD {
+    display: flex;
+    width: 95%;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    padding-top: 15px;
+    border-radius: 10px;
+    background-color: #EDDCD2;
+}
+
+/* Diseño de la parte de arriba de caja del producto del Main*/
+.gestionDePago .contMainADA {
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+}
+
+/* Linea divisoria para separar temas*/
+.gestionDePago .lineaHorizontal2 {
+    background: #616368;
+    height: 1px;
+    width: 95%;
+    text-align: center;
+}
+
+/* Diseño de la parte de abajo de la caja del producto del Main*/
+.gestionDePago .contMainADB {
+    display: flex;
+    width: 86%;
+    margin-top: 10px;
+}
+
+/* Diseño de la foto de al caja del producto del Main*/
+.gestionDePago .contMainADBA{
+    width: 60px;
+    border-radius: 10px;
+}
+
+/* Diseño del titulo y unidades de la caja del producto del Main*/
+.gestionDePago .contMainADBB{
+    width: 60%;
+    padding-left: 10px;
+}
+
+/* Diseño del precio de la caja del producto del Main*/
+.gestionDePago .contMainADBC{
+    margin-top: 25px;
+    padding-left: 21%;
+}
 
 
+/* Diseño de la caja de resumen de compra del Main*/
+.gestionDePago .contMainB {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    background-color:#DDBEA9;
+    margin-top: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 10px;
+
+}
+
+.gestionDePago .contMainBA {
+    font-size: 18px;
+}
+
+/* Diseño del cuerpo de la caja de resumen de compra del Main*/
+.gestionDePago .contMainBB, .contMainBC{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Diseño del boton la caja de resumen de compra del Main*/
+.gestionDePago .contMainBD{
+    padding: 10px;
+    align-self:center;
+    transform: background-color 600ms;
+    border-radius: 10px;
+
+}
+.gestionDePago .contMainBD:hover {
+    background-color: #CB997E;
+}
+
+@media (min-width: 992px) {
+    /* a partir de aca el resumen de compra se posiciona al lado de las opciones de envio*/
+    .gestionDePago .contenedorMain {
+        flex-direction: row;
+      }
+      .gestionDePago .contMainA {
+          width: 60%;
+          margin: 5%;
+      }
+      .gestionDePago .contMainB {
+        width: 25%;
+        margin: 5%;
+        margin-left: 0%;
+    }
+    
+    .gestionDePago .contMainBD {
+        margin-top: 50%;
+     }
+    }

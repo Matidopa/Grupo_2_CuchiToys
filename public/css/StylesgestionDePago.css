@@ -155,14 +155,14 @@ padding-left: 5%;
 /* Diseño del Main*/
 
 /* Diseño del contenedor padre del Main*/
-.contenedorMain {
+.gestionDePago .contenedorMain {
     background-color: #F0EFEB;
     display: flex;
     flex-wrap: wrap;
 }
 
 /* Diseño del contenedor de la caja de opciones de envio del Main*/
-.contMainA{
+.gestionDePago .contMainA{
     margin-left: 8%;
     margin-right: 8%;
     display: flex;
@@ -172,12 +172,12 @@ padding-left: 5%;
     padding: 10px;
 }
 
-.contMainA h2 {
+.gestionDePago .contMainA h2 {
    font-size: 22px;
 }
 
   /* Linea divisoria para separar temas*/
-.lineaHorizontal {
+  .gestionDePago .lineaHorizontal {
     background: #616368;
     height: 1px;
     width: 95%;
@@ -185,7 +185,7 @@ padding-left: 5%;
 }
 
 /* Diseño de la caja de la direccion del usuario del Main*/
-.contMainAB {
+.gestionDePago .contMainAB {
     display: flex;
     width: 95%;
     height: 100px;
@@ -197,7 +197,7 @@ padding-left: 5%;
 }
 
 /* Diseño del fondo blanco del logo de maps del Main*/
-.contMainABA {
+.gestionDePago .contMainABA {
     border-radius: 50%;
     background-color: white;
     width: 40px;
@@ -209,25 +209,25 @@ padding-left: 5%;
 }
 
 /* Diseño del logo de maps del Main*/
-.contMainABA i{
+.gestionDePago .contMainABA i{
     position: absolute;
     left: 13px;
     top:12px ;
 }
 
-.contMainABB {
+.gestionDePago .contMainABB {
     padding-left: 15px;
     padding-right: 5px;
 }
 
 /* "paquete 1" del Main*/
-.contMainAC {
+.gestionDePago .contMainAC {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 /* Diseño de la caja del producto del Main*/
-.contMainAD {
+.gestionDePago .contMainAD {
     display: flex;
     width: 95%;
     height: 100px;
@@ -240,14 +240,14 @@ padding-left: 5%;
 }
 
 /* Diseño de la parte de arriba de caja del producto del Main*/
-.contMainADA {
+.gestionDePago .contMainADA {
     display: flex;
     justify-content: space-between;
     width: 86%;
 }
 
 /* Linea divisoria para separar temas*/
-.lineaHorizontal2 {
+.gestionDePago .lineaHorizontal2 {
     background: #616368;
     height: 1px;
     width: 95%;
@@ -255,33 +255,33 @@ padding-left: 5%;
 }
 
 /* Diseño de la parte de abajo de la caja del producto del Main*/
-.contMainADB {
+.gestionDePago .contMainADB {
     display: flex;
     width: 86%;
     margin-top: 10px;
 }
 
 /* Diseño de la foto de al caja del producto del Main*/
-.contMainADBA{
+.gestionDePago .contMainADBA{
     width: 60px;
     border-radius: 10px;
 }
 
 /* Diseño del titulo y unidades de la caja del producto del Main*/
-.contMainADBB{
+.gestionDePago .contMainADBB{
     width: 60%;
     padding-left: 10px;
 }
 
 /* Diseño del precio de la caja del producto del Main*/
-.contMainADBC{
+.gestionDePago .contMainADBC{
     margin-top: 25px;
     padding-left: 21%;
 }
 
 
 /* Diseño de la caja de resumen de compra del Main*/
-.contMainB {
+.gestionDePago .contMainB {
     display: flex;
     flex-direction: column;
     width: 84%;
@@ -293,12 +293,12 @@ padding-left: 5%;
 
 }
 
-.contMainBA {
+.gestionDePago .contMainBA {
     font-size: 18px;
 }
 
 /* Diseño del cuerpo de la caja de resumen de compra del Main*/
-.contMainBB, .contMainBC{
+.gestionDePago .contMainBB, .contMainBC{
     display: flex;
     justify-content: space-between;
     padding-right: 5%;
@@ -308,14 +308,14 @@ padding-left: 5%;
 }
 
 /* Diseño del boton la caja de resumen de compra del Main*/
-.contMainBD{
+.gestionDePago .contMainBD{
     padding: 10px;
     align-self:center;
     transform: background-color 600ms;
     border-radius: 10px;
 
 }
-.contMainBD:hover {
+.gestionDePago .contMainBD:hover {
     background-color: #CB997E;
 }
 
@@ -579,32 +579,23 @@ display: none;
 
 /* Cambios en el diseño a partir de 576px EN HMAIN, los cambios del HEADER Y FOOTER estan arriba*/
 /*---------------------------------------------------------------------------------------------*/
-
-
-@media (min-width: 576px) { 
-    
-}
-
-@media (min-width: 768px) {
-
-}
    
 @media (min-width: 992px) {
 /* a partir de aca el resumen de compra se posiciona al lado de las opciones de envio*/
-  .contenedorMain {
+.gestionDePago .contenedorMain {
     flex-direction: row;
   }
-  .contMainA {
+  .gestionDePago .contMainA {
       width: 60%;
       margin: 5%;
   }
-  .contMainB {
+  .gestionDePago .contMainB {
     width: 25%;
     margin: 5%;
     margin-left: 0%;
 }
 
- .contMainBD {
+.gestionDePago .contMainBD {
     margin-top: 50%;
  }
 }

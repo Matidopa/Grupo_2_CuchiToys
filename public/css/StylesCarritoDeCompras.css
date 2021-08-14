@@ -151,10 +151,11 @@ padding-left: 5%;
     text-align: center;
 }
 
-
+/*-------------------------------------  Diseño del Carrito de compra  ---------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
 
 /* Diseño del contenedor padre del Main*/
-.contenedorMain {
+.carritoDeCompra .contenedorMain {
     display: flex;
     flex-direction: column;
     background-color: #FFF1E6;
@@ -165,7 +166,7 @@ body {
 }
 
 /* Diseño del titulo del Main*/
-.contMainA h2{
+.carritoDeCompra .contMainA h2{
     font-family: unset;
     padding-top: 10px;
     margin-left: 6%;
@@ -173,7 +174,7 @@ body {
 }
 
   /* Linea divisoria para separar temas*/
-.contMain-lineaHorizontal {
+  .carritoDeCompra .contMain-lineaHorizontal {
     background: #616368;
     height: 1px;
     width: 86%;
@@ -182,7 +183,7 @@ body {
 }
 
 /* Diseño del article (producto) del Main*/
-.contMainB {
+.carritoDeCompra .contMainB {
     display: flex;
     background-color: #DDBEA9;
     flex-wrap: nowrap;
@@ -194,32 +195,32 @@ body {
 }
 
 /* Diseño de la foto del producto del article del Main*/
-.contMainBA {
+.carritoDeCompra .contMainBA {
     width: 20%;
     padding: 10px;
     text-align: center;
 }
-.contMainBA img {
+.carritoDeCompra .contMainBA img {
     width: 100%;
     border-radius: 10px;
 }
 
 /* Diseño del nombre y contador del producto del article del Main*/
-.contMainBB {
+.carritoDeCompra .contMainBB {
     display: flex;
     flex-direction: column;
     width: 60%;
 }
-.contMainBBA a,.contMainBBBA a,.contMainBBBB a,.contMainBBBC a {
+.carritoDeCompra .contMainBBA a,.contMainBBBA a,.contMainBBBB a,.contMainBBBC a {
     text-decoration:none;
     color: black;
 }
-.contMainBBA h2 {
+.carritoDeCompra .contMainBBA h2 {
     font-size: 18px;
     font-family: unset;
     margin-left: 10%;
 }
-.contMainBBB {
+.carritoDeCompra .contMainBBB {
     display: flex;
     border-radius: 5px;
     width: 110px;
@@ -232,30 +233,30 @@ body {
 }
 
 /* Diseño del tacho y precio del producto del article del Main*/
-.contMainBC {
+.carritoDeCompra .contMainBC {
     display: flex;
     flex-direction: column;
     width: 20%;
     text-align: right;
 }
-.contMainBCA {
+.carritoDeCompra .contMainBCA {
     display: flex;
     flex-direction: column;
     margin-right: 10px;
     margin-left: 20px;
     margin-top: 10px;
 }
-.contMainBCA img {
+.carritoDeCompra .contMainBCA img {
     height: 25px;
     width: 25px;
 }
-.contMainBCB {
+.carritoDeCompra .contMainBCB {
     margin-top: 30px;
     margin-right: 10px;
 }
 
 /* Linea divisoria para separar temas*/
-.contMain-lineaHorizontal2 {
+.carritoDeCompra .contMain-lineaHorizontal2 {
     background: #616368;
     height: 1px;
     width: 86%;
@@ -265,7 +266,7 @@ body {
 }
 
 /* Diseño del Formato de Envio del Main*/
-.contMainC {
+.carritoDeCompra .contMainC {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -273,25 +274,25 @@ body {
     margin-left: 6%;
     margin-top: 10px;
 }
-.contMainC h2 {
+.carritoDeCompra .contMainC h2 {
     font-size: 18px;
     font-family: unset;
     margin-bottom: 10px;
 }
-.contMainCB {
+.carritoDeCompra .contMainCB {
     display: flex;
     flex-direction: column;
 }
 
 /* Diseño de la eleccion de envio del Formato de Envio del Main*/
-.contMainCBA {
+.carritoDeCompra .contMainCBA {
     display: flex;
     margin-bottom: 10px;
 }
-.contMainCBAA {
+.carritoDeCompra .contMainCBAA {
     width: 150px;
 }
-.contMainCBAB {
+.carritoDeCompra .contMainCBAB {
     width: 150px;
 }
 
@@ -299,19 +300,19 @@ body {
 input {
     width: 15%;
 }
-.contMainCBB {
+.carritoDeCompra .contMainCBB {
     margin-left: 8px;
 }
 
 /* Diseño del total del Main*/
-.contMainD {
+.carritoDeCompra .contMainD {
     display: flex;
     width: 86%;
     margin-left: 6%;
     margin-top: 10px;
     justify-content: space-between;
 }
-.contMainDB {
+.carritoDeCompra .contMainDB {
     display: flex;
     text-align: right;
     display: flex;
@@ -319,12 +320,12 @@ input {
 }
 
 /* Diseño del continuar del Main*/
-.contMainE {
+.carritoDeCompra .contMainE {
     flex-direction: row-reverse;
     display: flex;
     width: 92%;
 }
-.contMainEA {
+.carritoDeCompra .contMainEA {
     border-radius: 10px;
     text-align: center;
     background-color: #CB997E;
@@ -591,13 +592,13 @@ display: none;
     }
     
 
-/* Cambios en el diseño a partir de 576px EN HMAIN, los cambios del HEADER Y FOOTER estan arriba*/
+/* Cambios en el diseño a partir de 576px EN MAIN, los cambios del HEADER Y FOOTER estan arriba*/
 /*---------------------------------------------------------------------------------------------*/
 
 
 @media (min-width: 576px) { 
 /* Cambio para que a partir de aca las fotos no se sigan agrandando*/
-.contMainBA {
+.carritoDeCompra .contMainBA {
     width: 100px;
 }
     
@@ -605,15 +606,7 @@ display: none;
 
 @media (min-width: 768px) {
 /* Cambio para que a partir de aca el tacho y el precio esten bien a la derecha*/
-    .contMainBC {
+.carritoDeCompra .contMainBC {
         width: 30%;
     }
-}
-   
-@media (min-width: 992px) {
-  
-}
-   
-@media (min-width: 1200px) {
-
 }

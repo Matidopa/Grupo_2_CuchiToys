@@ -12,26 +12,26 @@ app.listen(process.env.PORT || port,  function(){
 });
 
 app.get('/',(req,res)=>{
-    res.sendFile (path.join(__dirname,'views/home.html'))
+    res.sendFile (path.join(__dirname,'views/users/home.html'))
 });
 app.get('/registro',(req,res)=>{
-    res.sendFile (path.join(__dirname,'views/registro.html'))
+    res.sendFile (path.join(__dirname,'views/users/registro.html'))
 });
 app.get('/DetalleDeProducto',(req,res)=>{
-    res.sendFile (path.join(__dirname,'views/detalleDeProducto.html'))
+    res.sendFile (path.join(__dirname,'views/products/detalleDeProducto.html'))
 });
 app.get('/login',(req,res)=>{
-    res.sendFile (path.join(__dirname,'views/login.html'))
+    res.sendFile (path.join(__dirname,'views/users/login.html'))
 });
 app.get('/comoComprar',(req,res)=>{
-    res.sendFile (path.join(__dirname,'views/comoComprar.html'))
+    res.sendFile (path.join(__dirname,'views/users/comoComprar.html'))
 });
 app.get('/carritoDeCompras',(req,res)=>{
-    res.sendFile (path.join(__dirname,'views/carritoDeCompras.html'))
+    res.sendFile (path.join(__dirname,'views/products/carritoDeCompras.html'))
 });
 app.get('/categoriasDeJuguetes',(req,res)=>{
-    res.sendFile (path.join(__dirname,'views/categoriasDeJuguetes.html'))
+    res.sendFile (path.join(__dirname,'views/products/categoriasDeJuguetes.html'))
 });
 app.get('/gestionDePago',(req,res)=>{
-    res.sendFile (path.join(__dirname,'views/gestionDePago.html'))
+    res.sendFile (path.join(__dirname,'views/products/gestionDePago.html'))
 });

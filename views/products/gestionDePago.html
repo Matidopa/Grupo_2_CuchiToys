@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> </title>
+    <link rel="stylesheet" href="/css/Styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 rel="stylesheet" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/StylesComoComprar.css">
 </head>
 <body>
     <header>
@@ -20,7 +20,7 @@ rel="stylesheet" />
         <div class="contenedorHeader"> <!-- Contenedor de todo lo que se encuentra en el Header-->
     
             <div class="contHeaderA"> <!-- Contenedor del logo-->
-                 <img src="/images/CT Logo.png" width= "105px"> 
+                 <img href="/" src="/images/CT Logo.png" width= "105px"> 
             </div>
 
             <div class="contHeaderB"> <!-- Contenedor de la barra de búsqueda-->
@@ -44,7 +44,7 @@ rel="stylesheet" />
              </div>
 
         </div>
-        <div class = "lineaHorizontal"> </div> <!-- linea que separa al nav-->
+        <div class = "lineaHorizontalHeader"> </div> <!-- linea que separa al nav-->
         <nav> 
             <div class = "contenedorNav"> <!-- Contenedor de todo el nav-->
                 <div class = "circuloSeparadorA"> </div> 
@@ -52,7 +52,7 @@ rel="stylesheet" />
                 <div class = "circuloSeparadorA"> </div>
                 <a href = "" class = "contrNavA"> <h4> Juguetes </h4> </a>
                 <div class = "circuloSeparadorA"> </div>
-                <a href = "" class = "contNavB"> <h4> Cómo Comprar </h4> </a>
+                <a href = "/comoComprar" class = "contNavB"> <h4> Cómo Comprar </h4> </a>
                 <div class = "circuloSeparadorB"> </div>
                 <a href = "" class = "contNavB"> <h4> Contacto </h4> </a>
                 <div class = "circuloSeparadorB"> </div>
@@ -60,31 +60,61 @@ rel="stylesheet" />
                 <div class = "circuloSeparadorB"> </div>
             </div>
         </nav>
-        <div class = "lineaHorizontal"> </div>  <!-- linea que separa al nav-->
+        <div class = "lineaHorizontalHeader"> </div>  <!-- linea que separa al nav-->
     </header>
-  <main>
-<div class="contenedorMain">  <!-- Contenedor padre del Main-->
-
-    <div class= "contMainA">  <!-- Contenedor del "Elegi" del Main-->
-        <img src= "/images/icono-tienda.png" >
-        <h2> Elegí </h2>
-        <p> Seleccioná los productos que quieras, agregalos al carrito o elegí la opción Comprar ahora.</p>
-    </div>
-    <div class= "lineaVertical"> </div>  <!-- linea divisoria que se ve cuando estas en escritorio-->
-    <div class= "contMainB">  <!-- Contenedor del "Paga" del Main-->
-        <img src= "/images/icono-tarjetas.png">
-        <h2> Pagá </h2>
-        <p>Procesamos tu compra en nuestra tienda utilizando la tecnología de Mercado Libre. Te llevaremos para que realices el pago de forma ágil y segura a través de pagos con débito, crédito y efectivo.</p>
-    </div>
-    <div class= "lineaVertical"> </div> <!-- linea divisoria que se ve cuando estas en escritorio-->
-    <div class= "contMainC">  <!-- Contenedor del "Recibe" del Main-->
-        <img src= "/images/icono-caja.png">
-        <h2> Recibe </h2>
-        <p>Elegí la forma de entrega que prefieras... ¡y listo!</p>
-    </div>
-
-</div>
-
+  <main class= "gestionDePago">
+      <div class= "contenedorMain">
+        <div class= "contMainA">
+            <h2> Opciones de Envio </h2> <!-- Titulo de la pagina-->
+            <div class= "lineaHorizontal"> </div> <!-- linea divisoria-->
+            <div class= "contMainAB"> <!-- contenedor de toda la direccion del usuario del main-->
+                <div class= "contMainABA"> <!-- contenedor del icono del maps del producto-->
+                    <i class="fas fa-map-marker-alt"></i>
+                 </div>
+                <div class= "contMainABB"> <!-- contenedor del medio de la caja de la direccion del main-->
+                    <h3> Dirección del usuario</h3>
+                    <p> Codigo postal, barrio, Provincia</p>
+                    <p> +54 911 12121212</p>
+                 </div>
+             </div>
+            <div class= "lineaHorizontal"> </div> <!-- linea divisoria-->
+            <h3 class= "contMainAC">paquete 1 </h3>
+            <div class= "contMainAD"> <!-- contenedor de toda la caja del producto del main-->
+                <div class= "contMainADA"> <!-- contenedor de la parte de arriba de la caja del producto del main-->
+                    <h3 class= "contMainADAA"> Llega Mañana </h3>
+                    <p class= "contMainADAB"> $599 </p>
+                 </div>
+                <div class= "lineaHorizontal2"> </div> <!-- linea divisoria-->
+                <div class= "contMainADB"> <!-- contenedor de la parte de abajo de la caja del producto del main-->
+                    <img src= "/images/ejemploJuguete1.jpg" class= "contMainADBA">
+                    <div class= "contMainADBB">
+                        <p > Caballo de madera </p>
+                        <p> Unidades: 2 </p>
+                    </div>
+                    <p class= "contMainADBC">$1599</p>
+                 </div>
+             </div>
+         </div>
+        <div class= "contMainB"> <!-- contenedor de toda la caja de la derecha del main-->
+            <h3 class= "contMainBA"> Resumen de compra </h3>
+            <div class= "lineaHorizontal2"> </div> <!-- linea divisoria-->
+            <div class= "contMainBB"> <!-- contenedor del precio final de productos y envios del main-->
+                <div class= "contMainBBA">
+                    <p> precio de Productos: </p>
+                    <p> precio de Envios: </p>
+                 </div>
+                <div class= "contMainBBB">
+                    <p> $precio </p>
+                    <p> $precio </p>
+                 </div>
+             </div>
+            <div class= "lineaHorizontal2"> </div> <!-- linea divisoria-->
+            <div class= "contMainBC"> <!-- contenedor del TOTAL del main-->
+                <p class= "contMainBCA"> TOTAL: </p>
+                <p class= "contMainBCB"> $precio </p>
+             </div>
+            <button class= "contMainBD">Continuar </button> <!-- boton de continuar-->
+      </div>
   </main>
   <footer>
     <div class="contenedorFooter">  <!-- Contenedor padre del Footer -->
